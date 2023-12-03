@@ -30,8 +30,8 @@ done
 
 # Check the flag before executing further commands
 if [ "$ln_success" = true ]; then
-    # execute pywal
-    wal -i "$wallpaper_path"
+    # execute wallust instead of pywal
+    wallust -b wal -c lab-mixed -t 10 "$wallpaper_path"
 
     # execute pywal skipping tty and terminal changes
     # wal -i "$wallpaper_path" -s -t &
